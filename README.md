@@ -22,4 +22,6 @@ high 模式首先合并 base color 和 roughness 两种纹理，roughness 占用
 normal，ao，cavity，displacement 四纹理合并为一张纹理，normal 占用 RG 两通道。ao 和 cavity 使用正片叠底模式，即 a * b / 255。最后 displacement 占用alpha 通道。
 此模式的特点是相对simple 而言少一次采样，但是效果较simple 差，使用也稍微麻烦一些。
 
-high 模式纹理在 ue 中使用方式：
+high 模式纹理在 ue 中使用方式如下图：
+<img width="1120" alt="image" src="https://user-images.githubusercontent.com/38783813/151701597-0e74cdde-bcb4-4aac-9d35-af495b98b231.png">
+
